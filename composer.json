@@ -1,0 +1,57 @@
+{
+  "name": "arraypress/swiftdb",
+  "version": "1.0.0",
+  "description": "A modern database abstraction layer for WordPress, based on BerlinDB, providing an efficient and structured approach to database operations.",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/arraypress/swiftdb/",
+  "authors": [
+    {
+      "name": "David Sherlock",
+      "homepage": "https://arraypress.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SwiftDB\\": "src/"
+    },
+    "classmap": [
+      "src/Base.php",
+      "src/Column.php",
+      "src/Query.php",
+      "src/Row.php",
+      "src/Schema.php",
+      "src/Table.php",
+      "src/Queries/Meta.php",
+      "src/Queries/Compare.php",
+      "src/Queries/Date.php",
+      "src/Queries/Aggregate.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable",
+  "support": {
+    "issues": "https://github.com/arraypress/swiftdb/issues",
+    "source": "https://github.com/arraypress/swiftdb"
+  },
+  "keywords": [
+    "wordpress",
+    "database",
+    "abstraction",
+    "berlindb",
+    "wp-db",
+    "orm",
+    "query-builder",
+    "mysql",
+    "database-layer",
+    "wordpress-database",
+    "wp-queries"
+  ]
+}
